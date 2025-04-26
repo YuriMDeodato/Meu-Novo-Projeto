@@ -13,7 +13,7 @@ return(
 }
 
 Item.propTypes = {
-    marca: PropTypes.string.isRequired,
+    marca: PropTypes.string,
     lancamento: PropTypes.number,
 }
 

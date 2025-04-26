@@ -6,7 +6,7 @@ function List(){
         <>
         <h1>Minha Lista</h1>
             <ul>
-               <Item marca lancamento/>
+              <Item marca={0}/>
             </ul>
         </>
     )
