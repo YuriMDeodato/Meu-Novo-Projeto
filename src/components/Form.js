@@ -1,7 +1,15 @@
+import { useState } from "react"
 
 function Form(){
 
+
+    const [name, Setname] = useState()
+    const [password, setPassword] = useState()
+
+
+
     function cadastrarUsuario(e){
+        console.log(name)
         e.preventDefault()
         console.log("Cadastrou o usuário")
     }
@@ -15,14 +23,24 @@ function Form(){
                 <input 
                 type= "text" 
                 id="name"
-                placeholder="Digite seu nome"/>
+                name="name"
+                placeholder="Digite seu nome"
+                onChange={(e)=>Setname(e.target.value)}
+                />
+                
             </div>
             <div>
-                <label htmlFor="password"></label>
-                <input type= "password" placeholder="Cadastrar sua senha"/>
+                <label htmlFor="password">Senha:</label>
+                <input 
+                type= "password" 
+                id="password"
+                name="password"
+                placeholder="Digite seu nome"
+                onChange={(e)=>setpassword(e.target.value)}
+                />
             </div>
             <div>
-                <input type= "submit" value="Cadastrar"/>
+                <input type="submit" value="Cadastrar"/>
             </div>
             </form>
         </div>
