@@ -1,7 +1,7 @@
-function Evento(){
+function Evento({numero}){
 
     function meuEvento(){
-        console.log("Fui ativado");
+        console.log(`Fui ativado ${numero}`);
     }
 
     return(
