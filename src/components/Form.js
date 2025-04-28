@@ -1,47 +1,44 @@
-import { useState } from "react"
+import { useState } from 'react'
 
 function Form(){
-
-
-    const [name, Setname] = useState()
-    const [password, setPassword] = useState()
-
-
-
     function cadastrarUsuario(e){
-        console.log(name)
         e.preventDefault()
-        console.log("Cadastrou o usuário")
+        console.log(`Usuário cadastrado foi ${name}, senha cadastrada foi ${password}`)
+
     }
+
+    const [name, setName] = useState();
+    const [password, setPassword] = useState();
+     
+
     return(
         <div>
             <h1>Meu Cadastro:</h1>
-
             <form onSubmit={cadastrarUsuario}>
-            <div>
+              <div>
                 <label htmlFor="name">Nome:</label>
                 <input 
                 type= "text" 
                 id="name"
                 name="name"
                 placeholder="Digite seu nome"
-                onChange={(e)=>Setname(e.target.value)}
+                onChange={(e)=>setName(e.target.value)}
                 />
                 
-            </div>
-            <div>
+              </div>
+              <div>
                 <label htmlFor="password">Senha:</label>
                 <input 
                 type= "password" 
                 id="password"
                 name="password"
                 placeholder="Digite seu nome"
-                onChange={(e)=>setpassword(e.target.value)}
+                onChange={(e)=>setPassword(e.target.value)}
                 />
-            </div>
-            <div>
+              </div>
+              <div>
                 <input type="submit" value="Cadastrar"/>
-            </div>
+              </div>
             </form>
         </div>
     )
