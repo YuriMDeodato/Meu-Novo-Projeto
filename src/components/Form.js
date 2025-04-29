@@ -25,6 +25,7 @@ function Form(){
             onChange={(e)=> setName(e.target.value)}/>
           </div>
           <div>
+          <label htmlFor='password'>Senha:</label>
             <input type='password' id='password' name='password' placeholder='Digite sua senha'
             onChange={(e)=>setPassword(e.target.value)}/>
           </div>
