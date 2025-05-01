@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
     <h1>Reiderização Condicional</h1>
-    <Condicional /> 
+    <Condicional/> 
     </div>
   );
 }
