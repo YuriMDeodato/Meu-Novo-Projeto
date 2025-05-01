@@ -10,6 +10,10 @@ function Condicional(){
         setUserEmail(email)
         console.log(`Cadastrou o email: ${userEmail}`)
     }
+
+    function deletar(e){
+        setUserEmail('')
+    }
    
     return(
         <div>
@@ -17,6 +21,8 @@ function Condicional(){
             <form>
                 <input type="email" placeholder="Digite seu email" onChange={(e) => setEmail(e.target.value)}/>
                 <button type="submit" onClick={cadastrar}>Enviar</button>
+                {userEmail &&(<div><p>O email cadastrado foi o: {userEmail}</p></div>)}
+                <button type="submit" onClick={deletar}>Deletar</button>
             </form>
 
         </div>
