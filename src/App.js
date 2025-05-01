@@ -11,6 +11,7 @@ function App() {
     <h1>Testando eventos</h1>
     <List/>
     <Form/>
+    <Evento numero={1}/>
     </div>
   );
 }
