@@ -2,32 +2,32 @@ import { useState } from "react";
 
 function Condicional(){
 
-    const [email, setEmail]= useState();
-    const [userEmail, setUserEmail] = useState()
+    const [email, setEmail] = useState();
+    const [userEmail, setUserEmail] = useState();
 
-    function cadastrar(e){
-        e.preventDefault()
-        setUserEmail(email)
-        console.log(`Cadastrou o email: ${userEmail}`)
+    function cadastro(e){
+        e.preventDefault(e);
+        setUserEmail(email);
     }
 
-    function deletar(e){
-        setUserEmail('')
+    function deletar(){
+        setUserEmail('');
+
     }
-   
+
+
     return(
         <div>
-            <h1>Cadastre seu Email</h1>
-            <form>
-                <input type="email" placeholder="Digite seu email" onChange={(e) => setEmail(e.target.value)}/>
-                <button type="submit" onClick={cadastrar}>Enviar</button>
-                {userEmail &&(<div><p>O email cadastrado foi o: {userEmail}</p></div>)}
-                <button type="submit" onClick={deletar}>Deletar</button>
-            </form>
+           <h1>Cadastro de Email</h1> 
 
+           <form>
+            <input type="email" placeholder="Digite seu email" onChange={(e)=>setEmail(e.target.value)}/>
+            <button type="submit" onClick={cadastro}>Enviar</button>
+            {userEmail && (<div><p>O Email cadastrado é: {userEmail}</p></div>)}
+            <button type="submit" onClick={deletar}>deletar</button>
+           </form>
         </div>
     )
-
 }
 
 export default Condicional;
