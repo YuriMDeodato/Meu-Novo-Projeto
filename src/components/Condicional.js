@@ -23,7 +23,7 @@ function Condicional(){
             {userEmail && ( // Renderiza o parágrafo apenas se userEmail não for nulo ou indefinido
                 <p>O e-mail cadastrado foi: {userEmail}</p>
             )}
-            <button onClick={limparEmail}></button> {/* Botão para limpar o e-mail cadastrado */} 
+            <button onClick={limparEmail}>Deletar</button> {/* Botão para limpar o e-mail cadastrado */} 
             {userEmail ? ( // Se userEmail não for nulo ou indefinido, renderiza a mensagem abaixo
                 <p>Obrigado por cadastrar o seu e-mail!</p>
             ) : ( // Caso contrário, renderiza a mensagem abaixo
