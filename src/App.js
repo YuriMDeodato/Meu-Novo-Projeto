@@ -13,6 +13,7 @@ function App() {
     <h1>Renderização de listas</h1>
     <OutraLista itens={meusItens}/>
     <OutraLista itens={meusItens}/>
+    <Condicional/>
     
     </div>
   );
