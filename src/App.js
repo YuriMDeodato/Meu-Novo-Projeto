@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import Home from "./pages/Home";
-import Empresa from "./pages/Empresa";
-import Contato from "./pages/Contato";
-import NovoProjeto from "./pages/NovoProjeto";
+import NavBar from "./components/layout/NavBar";
+import Home from "./components/pages/Home";
+import Empresa from "./components/pages/Empresa";
+import Contato from "./components/pages/Contato";
+import NovoProjeto from "./components/pages/NovoProjeto";
 import './App.css';
 
 
