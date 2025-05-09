@@ -4,8 +4,10 @@ import Home from "./components/pages/Home";
 import Empresa from "./components/pages/Empresa";
 import Contato from "./components/pages/Contato";
 import NovoProjeto from "./components/pages/NovoProjeto";
-import './App.css';
 import Container from "./components/layout/Container";
+import Footer from "./components/layout/Footer";
+import './App.css';
+
 
 
 
@@ -13,7 +15,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    
       <Router>
         <NavBar/>
         <Container customClass="min-height">
@@ -24,8 +26,8 @@ function App() {
           <Route path="/novoprojeto" element={<NovoProjeto/>}/>  
           </Routes>
           </Container>
+        <Footer/> 
       </Router>
-    </div>
   );
 }
 
