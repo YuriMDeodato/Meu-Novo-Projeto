@@ -7,13 +7,15 @@ function NavBar(){
         
         <nav className={styles.navbar}>
             <Container className={styles.container}>
-            <Link to='/'>Home</Link>
-            <Link to='/novoprojeto'>Projetos</Link>
-            <Link to='/contato'>Contato</Link>
-            <Link to='/empresa'>Empresa</Link>
+            <Link to='/'></Link>
+            <ul className={styles.list}>
+            <li class={styles.item}><Link to='/'>Home</Link></li>
+            <li class={styles.item}><Link to='/contato'>Contato</Link></li>
+            <li class={styles.item}><Link to='/empresa'>Empresa</Link></li>
+            </ul>
             </Container>
         </nav>
-    )
+    ) 
 }
 
 export default NavBar;
