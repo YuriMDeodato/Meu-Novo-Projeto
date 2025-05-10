@@ -27,3 +27,7 @@
     color: white;
     font-size: 1.2em;
 }
+
+.item a:hover{
+    color: #ffbb33;
+}
