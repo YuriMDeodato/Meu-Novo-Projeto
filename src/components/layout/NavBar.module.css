@@ -12,6 +12,11 @@
    
 }
 
+.gif {
+    width: 5px;
+    height: 5px;
+}
+
 .list {
     display: flex;
     list-style: none;
@@ -31,3 +36,4 @@
 .item a:hover{
     color: #ffbb33;
 }
+
