@@ -11,11 +11,12 @@
     align-items: center;
    
 }
-
-.gif {
-    width: 5px;
-    height: 5px;
+.logo {
+  width: 100px;  /* ou outro tamanho que quiser */
+  height: auto; /* mantém a proporção */
 }
+
+
 
 .list {
     display: flex;

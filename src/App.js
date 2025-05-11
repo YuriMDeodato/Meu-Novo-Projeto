@@ -15,7 +15,6 @@ function App() {
 
 
   return (
-    
       <Router>
         <NavBar/>
         <Container customClass="min-height">
