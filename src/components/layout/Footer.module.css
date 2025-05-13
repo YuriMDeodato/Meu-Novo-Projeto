@@ -1,4 +1,10 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .footer {
     background-color: #1a2335;
     color: white;
@@ -20,5 +26,5 @@
 .social_list svg{
     font-size: 1.5em;
     cursor: pointer;
-    color: #285cc4;
+    color: #125dff;
 }
