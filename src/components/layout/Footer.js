@@ -1,4 +1,5 @@
 import styles from './Footer.module.css';
+import {} from 'react-icons/fa';
 function Footer(){
 
     return(
