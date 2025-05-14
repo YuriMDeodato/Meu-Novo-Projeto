@@ -3,10 +3,10 @@ import savings from '../../images/savings.svg';
 function Home(){
 
     return(
-        <section>
+        <section className={styles.home_container}>
             <h1>Bem-vindo ao <span>Gerenciador de Projetos</span></h1>
             <p>Comece a gerar e gerenciar seu projetos agora mesmo!</p>
-            <a href="/">Criar Projeto</a>
+            <button><a href="/">Criar Projeto</a></button>
             <img src={savings} alt="Gerenciador de Projetos" />
         </section>
     )
