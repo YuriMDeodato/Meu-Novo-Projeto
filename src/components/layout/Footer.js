@@ -8,7 +8,7 @@ function Footer(){
     return(
         <footer className={styles.footer}>
             <ul className={styles.social_list}>
-            <p>SeuProjetinho &copy; 2025</p>
+            <p className={styles.copy}>SEU PROJETINHO &copy; 2025</p>
             <li><FaFacebook/></li>
             <li><FaInstagram/></li>
             <li><FaLinkedin/></li>
