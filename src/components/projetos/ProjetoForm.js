@@ -9,7 +9,7 @@ function ProjetoForm() {
         </div>
         <div>
         <select>
-            <option disabled >Selecione a categoria</option>
+            <option disabled selected >Selecione a categoria</option>
         </select>
         </div>
         <div>
