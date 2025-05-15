@@ -9,8 +9,7 @@ function Home(){
         <section className={styles.home_container}>
             <h1>Bem-vindo ao <span>Gerenciador de Projetos</span></h1>
             <p className={styles.paragrafo}>Comece a gerar e gerenciar seu projetos agora mesmo!</p>
-            <button><a href="/novoprojeto">Criar Projeto</a></button>
-            <LinkBotao to="/novoprojeto" text="criar projeto" />
+            <LinkBotao to="/novoprojeto" text="Criar Projeto" />
             <img src={savings} alt="Gerenciador de Projetos" />
         </section>
     )
