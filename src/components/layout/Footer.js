@@ -6,6 +6,8 @@ import {FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 function Footer(){
 
     return(
+        <>
+        <hr/>
         <footer className={styles.footer}>
             <ul className={styles.social_list}>
             <p className={styles.copy}>SEU PROJETINHO &copy; 2025</p>
@@ -15,6 +17,7 @@ function Footer(){
             <li><FaWhatsapp /></li>
             </ul>
         </footer>
+        </>
     )
 }
 

@@ -1,6 +1,8 @@
+import styles from '../projetos/ProjetoForm.module.css';
+
 function ProjetoForm() {
   return (
-    <form>
+    <form className={styles.form}>
         <div>
             <input type="text" placeholder="Insira o nome do Projeto"/>
         </div>
