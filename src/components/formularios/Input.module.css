@@ -1,0 +1,21 @@
+
+.controle_formulario{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.controle_formulario label{
+    margin-bottom: .6em;
+    font-weight: bold;
+}
+
+.controle_formulario input{
+    padding: .7em;
+    border-radius: 0;
+    border: none;
+}
+
+.controle_formulario input::placeholder {
+    color: #7b7b7b
+}
