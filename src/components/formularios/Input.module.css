@@ -12,7 +12,7 @@
 
 .controle_formulario input{
     padding: .7em;
-    border-radius: 0;
+    border-radius: 10px;
     border: none;
 }
 

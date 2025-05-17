@@ -1,14 +1,16 @@
 
-
-.btn {
-    background-color: #222;
+.btn{
+    background-color: #1a2335;
     color: #fff;
-    padding: 0.7em 1.2em;
+    padding: 0.5em 1em;
     text-decoration: none;
     transition: 0.5s;
+    border-radius: 10px;
     cursor: pointer;
-    border: none;
 }
-.btn:hover {
-    color: #ffbb33;
+
+.btn:hover{
+    background-color: #ffbb33;
+    color: #222;
+    border: 1px solid #222;
 }

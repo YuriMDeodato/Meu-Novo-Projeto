@@ -15,8 +15,6 @@
   height: auto; /* mantém a proporção */
 }
 
-
-
 .list {
     display: flex;
     list-style: none;
