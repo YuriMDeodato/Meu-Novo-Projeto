@@ -1,8 +1,9 @@
 import styles from '../projetos/ProjetoForm.module.css';
 import Input from '../formularios/Input';
 import Select from '../formularios/Select';
+import BotaoSubmit from '../formularios/BotaoSubmit';
 
-function ProjetoForm() {
+function ProjetoForm({btnText}) {
   return (
     <form className={styles.form}>
         
@@ -19,9 +20,13 @@ function ProjetoForm() {
              placeholder="Insira o valor total do projeto"
              />
             <Select name="category_id" text="Selecione a categoria"/>
-        <div>
-            <input type="submit" value="Criar projeto"/>
-        </div>
+            <Input 
+             type="text"
+             text="DESCRIÇÃO DO PROJETO"
+             name="description"
+             placeholder="Insira a descrição do projeto"
+             />
+             <BotaoSubmit text={btnText}/>
     </form>
   );
 }
