@@ -18,6 +18,20 @@
       "cost": 0,
       "servicos": [],
       "valor total": "4524545"
+    },
+    {
+      "id": "a773",
+      "valor total": "58645645",
+      "name": "ASASA",
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "28ac",
+      "name": "marcos",
+      "valor total": "5500",
+      "cost": 0,
+      "servicos": []
     }
   ],
   "categorias": [

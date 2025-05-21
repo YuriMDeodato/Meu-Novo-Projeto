@@ -4,7 +4,7 @@ import Input from '../formularios/Input';
 import Select from '../formularios/Select';
 import BotaoSubmit from '../formularios/BotaoSubmit';
 
-function ProjetoForm({handleSubmit, btnText, projetoData, handleChange}) {
+function ProjetoForm({handleSubmit, btnText, projetoData, handleChange, handleCategory}) {
   const [categorias, setCategorias] = useState({});
   const [projeto, setProjeto] = useState(projetoData || {});
 
@@ -31,6 +31,15 @@ function ProjetoForm({handleSubmit, btnText, projetoData, handleChange}) {
   handleChange = (e) => { 
     setProjeto({...projeto, [e.target.name]: e.target.value});
   }
+
+  handleCategory = (e) => { 
+    setProjeto({...projeto,
+      categorias: {
+      id: e.target.value,
+      nome: e.target.options[e.target.selectedIndex].text,
+    },
+  });
+  }
   
   return (
     <form onSubmit={submit} className={styles.form}>
@@ -53,6 +62,7 @@ function ProjetoForm({handleSubmit, btnText, projetoData, handleChange}) {
               name="category_id" 
               text="Selecione a categoria"
               options={categorias}
+              handleCategory={handleCategory}
               />
             <Input 
              type="text"
