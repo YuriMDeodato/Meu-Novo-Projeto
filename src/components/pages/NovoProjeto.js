@@ -7,25 +7,24 @@ function NovoProjeto(){
 
     const navigate = useNavigate();
 
+function createPost(projeto){
+    projeto.cost = 0;
+    projeto.servicos = [];
 
-    function createPost(projeto){
-        // initialize the project Projetinhos
-        projeto.cost = 0
-        projeto.servicos = []
+    fetch('http://localhost:5000/projetos', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(projeto),
+    })
+    .then((resposta) => resposta.json())
+    .then((data) => {
+        console.log(data);
+      
+        navigate('/projetos', { state: { message: 'Projeto criado com sucesso!' } });
+    })
+    .catch((error) => console.log(error));
+}
 
-        fetch('http://localhost:5000/projetos', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(projeto),
-        }) .then((resposta) => resposta.json())
-           .then((data) => {
-            console.log(data)
-            navigate.push('/projetos', {message: 'Projeto criado com sucesso!'})
-        })
-        .catch((error) => console.log (error));
-    }
     return(
         <div className={styles.novoprojeto_container}>
             <h1>CRIAR PROJETO</h1>
