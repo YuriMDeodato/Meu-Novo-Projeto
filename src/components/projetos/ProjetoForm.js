@@ -5,7 +5,7 @@ import Select from '../formularios/Select';
 import BotaoSubmit from '../formularios/BotaoSubmit';
 
 function ProjetoForm({handleSubmit, btnText, projetoData, handleChange, handleCategory}) {
-  const [categorias, setCategorias] = useState({});
+  const [categorias, setCategorias] = useState([]);
   const [projeto, setProjeto] = useState(projetoData || {});
 
   useEffect(() => {
@@ -54,7 +54,7 @@ function ProjetoForm({handleSubmit, btnText, projetoData, handleChange, handleCa
             <Input 
              type="number"
              text="ORÇAMENTO DO PROJETO"
-             name="valor total"
+             name="valorTotal"
              placeholder="Insira o valor total do projeto"
              handleOnChange={handleChange}
              />
@@ -62,7 +62,8 @@ function ProjetoForm({handleSubmit, btnText, projetoData, handleChange, handleCa
               name="category_id" 
               text="Selecione a categoria"
               options={categorias}
-              handleCategory={handleCategory}
+              handleOnChange={handleCategory}
+              value={projeto.categorias ? projeto.categorias.id : ''}
               />
             <Input 
              type="text"
