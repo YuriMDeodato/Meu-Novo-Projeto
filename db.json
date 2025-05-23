@@ -1,10 +1,112 @@
 {
   "projetos": [
-  
     {
       "id": "ae26",
       "name": "PRIMEIRO TESTE",
       "valorTotal": "10.000,00",
+      "categorias": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "8ecb",
+      "name": "marcos",
+      "valorTotal": "5500",
+      "categorias": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "28cf",
+      "name": "dsdsd",
+      "valorTotal": "4.500,00",
+      "categorias": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "dddd",
+      "name": "dsdsd",
+      "valorTotal": "sdas",
+      "categorias": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "0d03",
+      "name": "dasd",
+      "valorTotal": "dasd",
+      "categorias": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "2bdf",
+      "name": "sadasdasd",
+      "valorTotal": "sadasdas",
+      "categorias": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "a345",
+      "name": "marcos",
+      "valorTotal": "dasd",
+      "categorias": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "e96e",
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "33c2",
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "3bbe",
+      "name": "asas",
+      "valorTotal": "asas",
+      "categorias": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "a566",
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "71a6",
+      "name": "sdsad",
+      "valorTotal": "sdas",
       "categorias": {
         "id": "2",
         "nome": "Desenvolvimento"

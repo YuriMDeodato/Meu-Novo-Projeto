@@ -20,7 +20,7 @@ function createPost(projeto){
     .then((data) => {
         console.log(data);
       
-        navigate('/projetos', { state: { message: 'Projeto criado com sucesso!' } });
+        navigate('/projetos', { state: { msg: 'Projeto criado com sucesso!' } });
     })
     .catch((error) => console.log(error));
 }
