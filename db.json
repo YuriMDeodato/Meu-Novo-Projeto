@@ -113,6 +113,39 @@
       },
       "cost": 0,
       "servicos": []
+    },
+    {
+      "id": "cf7a",
+      "name": "sdsad",
+      "valorTotal": "sdasd",
+      "categorias": {
+        "id": "Selecione uma opção",
+        "nome": "Selecione uma opção"
+      },
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "f49c",
+      "name": "asasas",
+      "valorTotal": "asasas",
+      "categorias": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "cost": 0,
+      "servicos": []
+    },
+    {
+      "id": "e4e2",
+      "name": "dsdsd",
+      "valorTotal": "10.000,00",
+      "categorias": {
+        "id": "1",
+        "nome": "Infra"
+      },
+      "cost": 0,
+      "servicos": []
     }
   ],
   "categorias": [

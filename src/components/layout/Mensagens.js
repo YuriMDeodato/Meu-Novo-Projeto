@@ -1,39 +1,56 @@
 import styles from './Mensagens.module.css';
 import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import {
+  CheckCircle,
+  AlertCircle,
+  Info,
+  XCircle,
+  X
+} from 'lucide-react';
 
-function Mensagens({ type, msg }) {
+const icones = {
+  sucesso: <CheckCircle size={20} />,
+  erro: <XCircle size={20} />,
+  info: <Info size={20} />,
+  alerta: <AlertCircle size={20} />
+};
+
+function Mensagens({ type = 'info', msg }) {
   const [visible, setVisible] = useState(false);
-  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     if (msg) {
-      setFadeOut(false);   // Reset fade out
-      setVisible(true);    // Ativa visibilidade (com fade-in)
-
+      setVisible(true);
       const timer = setTimeout(() => {
-        setFadeOut(true);  // Inicia fade-out
-        setTimeout(() => {
-          setVisible(false); // Esconde de vez após animação
-        }, 500);
-      }, 5000); // tempo da mensagem visível
+        setVisible(false);
+      }, 3000);
 
       return () => clearTimeout(timer);
     }
   }, [msg]);
 
   return (
-    <>
+    <AnimatePresence>
       {visible && (
-        <div className={`
-          ${styles.mensagens}
-          ${styles[type]}
-          ${styles.show}
-          ${fadeOut ? styles.fadeOut : ''}
-        `}>
-          {msg}
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: -15 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -15 }}
+          transition={{ duration: 0.4 }}
+          className={`${styles.mensagens} ${styles[type]}`}
+        >
+          <span className={styles.icone}>{icones[type]}</span>
+          <span className={styles.texto}>{msg}</span>
+          <button
+            onClick={() => setVisible(false)}
+            className={styles.fechar}
+          >
+            <X size={16} />
+          </button>
+        </motion.div>
       )}
-    </>
+    </AnimatePresence>
   );
 }
 
