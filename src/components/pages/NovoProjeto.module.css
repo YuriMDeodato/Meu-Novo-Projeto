@@ -1,9 +1,14 @@
-
-.novoprojeto_container{
-    width: 450px;
-    margin: 0 auto;
-    padding: 3em;
+.novoprojeto_container {
+width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  padding: 4em 8em !important;
+  margin: 0 !important;
+  text-align: left !important;
 }
+
 
 .novoprojeto_container h1{
     margin-bottom: 0.5em;
